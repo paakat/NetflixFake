@@ -20,5 +20,8 @@ EXPOSE $REACT_DOCKER_PORT
 CMD nginx -g 'daemon off;'
 
 
+## Installing dependences ...
 ## npm install 
+
+## Running with recompilation ... 
 ## npm run start 
