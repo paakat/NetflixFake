@@ -36,7 +36,8 @@ async function fakeFetch(url: string, data: any = null): Promise<iResponse> {
   result.data = fakeServer(url, data);
   result.status = "ok";
 
-  console.log("[fakeFetch] url:" + url ); 
+  console.log("[fakeFetch] data:" + data );
+  console.log("[fakeFetch]  url:" + url ); 
   console.log(result.data); 
 
   return result;
