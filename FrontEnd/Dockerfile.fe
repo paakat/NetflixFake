@@ -18,3 +18,7 @@ COPY --from=build-stage /FrontEnd/build /usr/share/nginx/html
 EXPOSE $REACT_DOCKER_PORT
 
 CMD nginx -g 'daemon off;'
+
+
+## npm install 
+## npm run start 

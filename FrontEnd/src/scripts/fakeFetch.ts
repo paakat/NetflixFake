@@ -12,6 +12,7 @@ interface iResponse {
 }
 
 async function fakeFetch(url: string, data: any = null): Promise<iResponse> {
+/*
   const chanceToSucced = generateRandomNumber(100);
   const result = { data: {}, status: "" };
 
@@ -29,6 +30,14 @@ async function fakeFetch(url: string, data: any = null): Promise<iResponse> {
       result.data = fakeServer(url, data);
       result.status = "ok";
   }
+*/
+  const result = { data: {}, status: "" };
+
+  result.data = fakeServer(url, data);
+  result.status = "ok";
+
+  console.log("[fakeFetch] url:" + url ); 
+  console.log(result.data); 
 
   return result;
 }

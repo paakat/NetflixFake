@@ -13,8 +13,10 @@ import iContent from "interfaces/iContent";
 import iDetailsOther from "interfaces/iDetailsOther";
 import iDetailsSeries from "interfaces/iDetailsSeries";
 
-export default function fakeServer(endPoint: string, data: any = null): any {
-  switch (endPoint) {
+export default function fakeServer(endPoint: string, data: any = null): any 
+{
+  switch (endPoint) 
+  {
     // Content
     case "content/":
       return Content;
