@@ -38,6 +38,7 @@ DOCKER_STOP()
 { 
   echo "[DOCKER_STOP] "
   echo docker stop ${CONTAINER_NAME}
+  docker stop ${CONTAINER_NAME}
 }
 
 
@@ -45,8 +46,11 @@ DOCKERFILE=Dockerfile.fe
 IMAGE_NAME=frondend_image 
 CONTAINER_NAME=frondend_container
 
+DOCKER_STOP 
+
 time DOCKER_BUILD  
 DOCKER_RUN_DETACHED
+
 DOCKER_EXEC_IT
-DOCKER_STOP
+
 
