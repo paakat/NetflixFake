@@ -3,10 +3,13 @@
 
 ## FrontEnd 
 
+**HowTo**
+```
+cd FrontEnd
+bash WORKFLOW.sh
+```
 
-  WORKFLOW.sh
-
-
+**Captured images**
 
 ![image01](Images/image01.png) 
 ![image01a](Images/image01a.png)
